@@ -1,0 +1,120 @@
+.digi,
+.digi *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*sidebar tabs start*/
+.digi_sidebar_tab_wrapper{
+    display: flex;
+    align-items: center;
+    background-color: var(--sidebarTabBg);
+    color: var(--sidebarTabTxt);
+}
+.digi_sidebar_tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: var(--sidebarTabHeight);
+    flex-shrink: 0;
+    background-color: var(--sidebarTabBg);
+    color: var(--sidebarTabTxt);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all var(--transitionDuration);
+    font-size: var(--fontSize);
+    border-top-left-radius: var(--sidebarTabRadius);
+    border-top-right-radius: var(--sidebarTabRadius);
+}
+.digi_sidebar_tab > .digi_sidebar_tab_txt{
+    padding: 0 4px;
+}
+.digi_sidebar_tab:hover{
+    background-color: var(--sidebarTabBgHover);
+    color: var(--sidebarTabTxtHover);
+}
+.digi_sidebar_tab-active{
+    background-color: var(--sidebarTabBgActive);
+    color: var(--sidebarTabTxtActive);
+}
+.digi_sidebar_tab_badge{
+    padding: 1px 5px;
+    border-radius: var(--sidebarTabBadgeRadius);
+    background-color: var(--sidebarTabBadgeBg);
+    color: var(--sidebarTabBadgeTxt);
+    transition: all var(--transitionDuration);
+}
+.digi_sidebar_tab:hover .digi_sidebar_tab_badge{
+    background-color: var(--sidebarTabBadgeBgHover);
+    color: var(--sidebarTabBadgeTxtHover);
+}
+.digi_sidebar_tab-active .digi_sidebar_tab_badge{
+    background-color: var(--sidebarTabBadgeBgActive);
+    color: var(--sidebarTabBadgeTxtActive);
+}
+/*sidebar tabs end*/
+
+
+/*sidebar range slider start*/
+.digi_sidebar_range_wrapper{
+    display: flex;
+    align-items: center;
+    background-color: var(--sidebarRangeBg);
+    color: var(--sidebarRangeTxt);
+    height: var(--sidebarRangeHeight);
+}
+.digi_sidebar_range_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 var(--sidebarRangePadX);
+    width: 70px;
+    flex-shrink: 0;
+    color: var(--sidebarRangeTxt);
+}
+.digi_sidebar_range_info > span:first-child{
+    color: var(--sidebarRangeAccent);
+}
+.digi_sidebar_range_slider{
+    display: flex;
+    align-items: center;
+    height: 24px;
+    flex-grow: 1;
+    padding: 0 var(--sidebarRangePadX);
+    position: relative;
+    cursor: pointer;
+}
+.digi_sidebar_range_handle{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--sidebarRangeTxt);
+    transition: all var(--transitionDuration);
+}
+.digi_sidebar_range_slider:hover > .digi_sidebar_range_handle {
+    background-color: var(--sidebarRangeAccent);
+}
+.digi_sidebar_range_step{
+    flex: 1;
+    height: 2px;
+    background-color: var(--sidebarRangeTxt);
+    margin: 0 1px;
+}
+
+/*sidebar range slider end*/
+
+/*sidebar item start*/
+.digi_sidebar_item{
+    display: flex;
+    align-items: center;
+    padding: 0 var(--sidebarItemPadX);
+    background-color: var(--sidebarItemBg);
+    color: var(--sidebarItemTxt);
+    height: var(--sidebarItemHeight);
+}
+/*sidebar item end*/
